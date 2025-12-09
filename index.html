@@ -8,22 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/2c4593a4a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
 
     <!-- for video popup -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="./css/magnific-popup.css">
 
     <!-- swiper  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <!-- WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="./css/animate.css"/>
 
 
     <link rel="stylesheet" href="style.css">
@@ -34,14 +30,10 @@
 <body class="syne-font">
 
     <!-- preloader -->
-    <div id="preloader" class="fixed inset-0 flex flex-col gap-4 justify-center items-center bg-white z-[9999]">
+    <div id="preloader" class="fixed inset-0 flex gap-4 justify-center items-center bg-white z-[9999]">
         <h2 class="text-[#2AB8DB] text-2xl font-semibold">Naxite is loading...</h2>
-        <div class="flex justify-center items-center gap-2">
-            <div class="w-8 h-8 border-4 border-gray-300 border-t-[#2AB8DB] rounded-full animate-spin"></div>
-            <div class="w-8 h-8 border-4 border-gray-300 border-t-[#2AB8DB] rounded-full animate-spin"></div>
-            <div class="w-8 h-8 border-4 border-gray-300 border-t-[#2AB8DB] rounded-full animate-spin"></div>
-            <div class="w-8 h-8 border-4 border-gray-300 border-t-[#2AB8DB] rounded-full animate-spin"></div>
-        </div>
+        <div class="w-8 h-8 border-4 border-gray-300 border-t-[#2AB8DB] rounded-full animate-spin"></div>
+        
     </div>
 
     <div class="bg-[url('./assets/bannerBG.png')] bg-cover bg-no-repeat">
@@ -545,7 +537,7 @@
             <div class="bg-[url('./assets/descriptionOfNaxiteBG.png')] bg-cover object-cover bg-no-repeat lg:flex lg:gap-[20px]">
                 <div class="lg:w-[50%] relative">
                     <div class="flex mt-[25px] ml-15 relative">
-                        <img class="hidden lg:block absolute top-10 left-140 z-999 animate-bounce" src="./assets/squareDots.png" alt="squareDots">
+                        <img class="hidden lg:block absolute top-10 left-140 animate-bounce" src="./assets/squareDots.png" alt="squareDots">
                         <img class="absolute left-40 top-40 w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-l-[#2AB8DB] border-t-[#2AB8DB]" src="./assets/description1.jpg" alt="description1">|
                         <img class="w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-[#2AB8DB]" src="./assets/description2.jpg" alt="description2">|
                     </div>
@@ -1155,6 +1147,8 @@
 
 
     <!-- for video popup -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
     <script>
         $(document).ready(function() {
             $('.video-popup').magnificPopup({
@@ -1178,7 +1172,7 @@
     </script>
 
     <!-- for slider -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.my-director-slider', {
             effect: 'fade',
@@ -1303,6 +1297,7 @@
     </script>
 
     <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init()
     </script>
