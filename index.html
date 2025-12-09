@@ -30,21 +30,20 @@
 <body class="syne-font">
 
     <!-- preloader -->
-    <div id="preloader" class="fixed inset-0 flex flex-col justify-center items-center bg-white z-[9999] gap-6">
+    <!-- <div id="preloaderr" class="fixed inset-0 flex flex-col justify-center items-center bg-white z-[9999] gap-6"> -->
 
-        <h2 class="text-[#2AB8DB] text-2xl font-semibold animate-pulse">
-            Naxite is loading...
-        </h2>
+        <!-- <h2 class="text-[#2AB8DB] text-2xl font-semibold animate-pulse">
+            Naxite is loading <span class="text-[#FFA8A7]">...</span>
+        </h2> -->
 
         <!-- 3 bouncing dots -->
-        <div class="flex gap-3">
+        <!-- <div class="flex gap-3">
             <div class="w-3 h-3 bg-[#2AB8DB] rounded-full dot dot-delay-0"></div>
-            <div class="w-3 h-3 bg-[#2AB8DB] rounded-full dot dot-delay-1"></div>
+            <div class="w-3 h-3 bg-[#FFA8A7] rounded-full dot dot-delay-1"></div>
             <div class="w-3 h-3 bg-[#2AB8DB] rounded-full dot dot-delay-2"></div>
-        </div>
+        </div> -->
 
-    </div>
-
+    <!-- </div>/ -->
 
     <div class="bg-[url('./assets/bannerBG.png')] bg-cover bg-no-repeat">
         <!-- header section -->
@@ -57,15 +56,15 @@
                
                 <!-- logo + navlinks -->
                 <div class="flex lg:gap-[50px]">
-                    <div>
+                    <div class="whiteLogo">
                         <a href="#">
-                            <img class="w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8 whiteLogo" src="./assets/Mainlogo.png" alt="logo">
+                            <img class="w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8" src="./assets/Mainlogo.png" alt="logo">
                         </a>
                     </div>
                     
-                    <div>
+                    <div class="whiteLogo">
                         <a href="#">
-                            <img class="hidden w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8 whiteLogo" src="./assets/Mainlogo.png" alt="logo">
+                            <img class="hidden w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8" src="./assets/Mainlogo.png" alt="logo">
                         </a>
                     </div>
 
@@ -544,10 +543,11 @@
 
         <!-- description of naxite section -->
         <div class="pt-[100px] lg:pt-[120px]">
-            <div class="bg-[url('./assets/descriptionOfNaxiteBG.png')] bg-cover object-cover bg-no-repeat lg:flex lg:gap-[20px]">
+            <div class="bg-[url('./assets/descriptionOfNaxiteBG.png')] bg-cover object-cover bg-no-repeat lg:flex lg:gap-[20px] flex justify-center">
                 <div class="lg:w-[50%] relative">
-                    <div class="flex mt-[25px] ml-15 relative">
+                    <div class="flex flex-col lg:flex-row mt-[25px] ml-15 relative">
                         <img class="hidden lg:block absolute top-10 left-140 animate-bounce" src="./assets/squareDots.png" alt="squareDots">
+                        <img class="hidden lg:block absolute top-140 left-0 animate-bounce rotate-270" src="./assets/pinkSquareDots.png" alt="squareDots">
                         <img class="absolute left-40 top-40 w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-l-[#2AB8DB] border-t-[#2AB8DB]" src="./assets/description1.jpg" alt="description1">|
                         <img class="w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-[#2AB8DB]" src="./assets/description2.jpg" alt="description2">|
                     </div>
