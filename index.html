@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
     <!-- Animate.css -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-    <link rel="stylesheet" href="./css/animate.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="./css/animate.css"/> -->
 
 
     <link rel="stylesheet" href="style.css">
@@ -55,22 +55,16 @@
             <div class="flex justify-between items-center lg:justify-center lg:gap-[100px] px-8 lg:px-10 py-5 lg:py-0">
                
                 <!-- logo + navlinks -->
-                <div class="flex lg:gap-[50px]">
+                <div class="flex lg:gap-[40px]">
                     <div class="whiteLogo">
                         <a href="#">
                             <img class="w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8" src="./assets/Mainlogo.png" alt="logo">
                         </a>
                     </div>
-                    
-                    <div class="whiteLogo">
-                        <a href="#">
-                            <img class="hidden w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8" src="./assets/Mainlogo.png" alt="logo">
-                        </a>
-                    </div>
 
-                    <div>
+                    <div class="blackLogo hidden">
                         <a href="#">
-                            <img class="hidden w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8 blackLogo" src="./assets/blackLogo.png" alt="logo">
+                            <img class="w-[150px] h-[38px] lg:w-[174px] lg:h-[38px] lg:mt-8" src="./assets/blackLogo.png" alt="logo">
                         </a>
                     </div>
 
@@ -104,7 +98,7 @@
                 <!-- no. and CTA -->
                 <div class="lg:flex gap-[59px] items-center hidden">
                     <div>
-                        <h3 class="hidden lg:block whitespace-nowrap font-[600] text-[16px] leading-[35px] number"><span class="call_us">Call Us:</span> (+55) -66 99 88</h3>
+                        <h3 class="hidden lg:block whitespace-nowrap font-[600] text-[16px] text-[#FFA8A7] leading-[35px] number"><span class="call_us text-[#FFFFFF]">Call Us:</span> (+55) -66 99 88</h3>
                     </div>
                     <div>
                         <button class="btn_animation ">
@@ -335,7 +329,7 @@
     </div>
 
     <main class="bg-[#F7F7F7] overflow-hidden">
-       <!-- about us section -->
+        <!-- about us section -->
         <div class="pt-[106px]">
             <div class="container flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[60px]">
                 <!-- left side -->
@@ -360,8 +354,8 @@
                     <div class="lg:bg-[url('./assets/aboutusBG.png')] w-[512px] h-[512px] mt-20 lg:mt-0 mb-90 lg:mb-0">
                         <div class="flex flex-col lg:flex-row gap-[30px] justify-center items-center lg:-ml-30">
                             <!-- 1st service -->
-                            <div>
-                                <div class="w-[25%] lg:mt-40 group w-[270px] h-[286px] bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
+                            <div class="">
+                                <div class="relative w-[25%] lg:mt-40 group w-[270px] h-[286px] bg-[#FFFFFF] flex flex-col justify-center items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
                                     <div class="group-hover:hidden block w-[100px] h-[110px] rounded-[10px] flex justify-center items-start transition-all duration-300 mt-[48px]">
                                         <img class="w-[50px] h-[50px] transition-all duration-300
                                                     group-hover:filter 
@@ -386,7 +380,10 @@
                     
                                     <h2 class="text-center text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">IT Consultancy</h2>
                                     <h4 class="text-center open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF]">Consectetur adipiscing elit.</h4>
-                                    
+
+                                    <div class="bg-[#2AB8DB] w-[50px] h-[50px] rounded-[100px] flex justify-center items-center absolute -top-5 -left-5 group-hover:bg-transparent">
+                                        <h3 class="text-white text-3xl font-semibold group-hover:hidden z-99">01</h3>
+                                    </div>
                                 </div>
                                 <!-- tags -->
                                 <div class="hidden lg:block lg:mt-[50px] flex flex-col gap-[10px]" >
@@ -401,7 +398,7 @@
             
                             <div class="lg:w-[25%]">
                                 <!-- 2nd service -->
-                                <div class=" group w-[270px] h-[286px] bg-[#FFFFFF] flex flex-col justify-start items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
+                                <div class="relative group w-[270px] h-[286px] bg-[#FFFFFF] flex flex-col justify-start items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
                                     <div class="group-hover:hidden block w-[100px] h-[110px] rounded-[10px] flex justify-center items-start transition-all duration-300 mt-[48px]">
                                         <img class="w-[50px] h-[50px] transition-all duration-300
                                                     group-hover:filter 
@@ -426,10 +423,14 @@
                     
                                     <h2 class="text-center text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">Data & Analytics</h2>
                                     <h4 class="text-center open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF]">Consectetur adipiscing elit.</h4>
+                                    
+                                    <div class="bg-[#2AB8DB] w-[50px] h-[50px] rounded-[100px] flex justify-center items-center absolute -top-5 -left-5 group-hover:bg-transparent">
+                                        <h3 class="text-white text-3xl font-semibold group-hover:hidden z-99">02</h3>
+                                    </div>
                                 </div>
     
                                 <!-- 3rd service -->
-                                <div class="mt-[40px] group w-[270px] h-[286px] bg-[#FFFFFF] flex flex-col justify-start items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
+                                <div class="relative mt-[40px] group w-[270px] h-[286px] bg-[#FFFFFF] flex flex-col justify-start items-center rounded-[10px] cursor-pointer transition-all duration-300 hover:bg-[#2AB8DB]">
                                     <div class="group-hover:hidden block w-[100px] h-[110px] rounded-[10px] flex justify-center items-start transition-all duration-300 mt-[48px]">
                                         <img class="w-[50px] h-[50px] transition-all duration-300
                                                     group-hover:filter 
@@ -454,6 +455,10 @@
                     
                                     <h2 class="text-center text-[#1F242E] group-hover:text-[#FFFFFF] font-[700] text-[24px] leading-[34px] mt-[24px]">Cyber Security</h2>
                                     <h4 class="text-center open-sans-font px-[30px] font-[400] text-[16px] leading-[30px] text-[#777777] group-hover:text-[#FFFFFF]">Consectetur adipiscing elit.</h4>
+                                    
+                                    <div class="bg-[#2AB8DB] w-[50px] h-[50px] rounded-[100px] flex justify-center items-center absolute -top-5 -left-5 group-hover:bg-transparent">
+                                        <h3 class="text-white text-3xl font-semibold group-hover:hidden z-99">03</h3>
+                                    </div>
                                 </div>
                             </div>
                     </div>
@@ -547,7 +552,7 @@
                 <div class="lg:w-[50%] relative">
                     <div class="flex flex-col lg:flex-row mt-[25px] ml-15 relative">
                         <img class="hidden lg:block absolute top-10 left-140 animate-bounce" src="./assets/squareDots.png" alt="squareDots">
-                        <img class="hidden lg:block absolute top-140 left-0 animate-bounce rotate-270" src="./assets/pinkSquareDots.png" alt="squareDots">
+                        <img class="hidden lg:block absolute top-140 left-0 animate-bounce rotate-180" src="./assets/pinkSquareDots.png" alt="squareDots">
                         <img class="absolute left-40 top-40 w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-l-[#2AB8DB] border-t-[#2AB8DB]" src="./assets/description1.jpg" alt="description1">|
                         <img class="w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-[#2AB8DB]" src="./assets/description2.jpg" alt="description2">|
                     </div>
@@ -1155,7 +1160,6 @@
         </div>
     </footer> 
 
-
     <!-- for video popup -->
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
@@ -1261,15 +1265,16 @@
         window.addEventListener("scroll", () => {
             const header = document.querySelector("header");
 
-            console.log(document.querySelector(".number"))
 
             if(window.scrollY > 0){
                 header.classList.add("scrolled");
                 document.querySelector(".navLinks").classList.add("navLinks-colored");
 
-                document.querySelector(".number").classList.remove("text-[#ffffff]");
-                document.querySelector(".number").classList.add("text-[#0f172a]");
-                document.querySelector(".call_us").classList.add("text-[#0f172a]");
+                document.querySelector(".call_us").classList.remove("text-[#FFA8A7]");
+                document.querySelector(".call_us").classList.add("text-black");
+
+                document.querySelector(".number").classList.remove("text-[#FFFFFF]");
+                document.querySelector(".number").classList.add("text-[#FFA8A7]");
 
 
 
@@ -1279,13 +1284,16 @@
                 
                 document.querySelector(".chat_icon").style.text="2AB8DB";
             }
-            
+            // normal
             else{
                 header.classList.remove("scrolled");
                 document.querySelector(".navLinks").classList.remove("navLinks-colored");
                 
-                document.querySelector(".number").classList.add("text-[#ffffff]");
+                document.querySelector(".call_us").classList.remove("text-black");
                 document.querySelector(".call_us").classList.add("text-[#FFA8A7]");
+
+                document.querySelector(".number").classList.remove("text-[#0f172a]");
+                document.querySelector(".number").classList.add("text-[#FFA8A7]");
 
                 document.querySelector(".whiteLogo").style.display="block";
                 document.querySelector(".blackLogo").style.display="none";
