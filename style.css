@@ -129,9 +129,24 @@
 
 
 /* preloader effect */
-@keyframes fadeOut {
-  to { opacity: 0; visibility: hidden; }
+/* bouncing dots */
+@keyframes dotBounce {
+  0%, 100% { 
+    transform: translateY(0); opacity: 0.3; 
+  }
+  50% { 
+    transform: translateY(-6px); opacity: 1; 
+  }
 }
+
+.dot {
+  animation: dotBounce 0.8s infinite ease-in-out;
+}
+
+.dot-delay-0 { animation-delay: 0s; }
+.dot-delay-1 { animation-delay: 0.15s; }
+.dot-delay-2 { animation-delay: 0.3s; }
+
 
 
 
