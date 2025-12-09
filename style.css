@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.syne-font{
+  font-family: "Syne", sans-serif;
+}
+
+.open-sans-font{
+  font-family: "Open Sans", sans-serif;
+}
+
+.debug{
+    border: 2px solid red;
+}
+
+
+.container{
+  max-width: 1220px;
+  margin: auto;
+}
+
+/* Swiper implementation */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #2AB8DB;
+  border: none ;
+  border-radius: 0; 
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFA8A7
+}
+
+
+/* Progress Bar implementation */
+.Bars {
+  width: 570px; 
+  height: 20px;
+  background: transparent;
+  border: 2px solid #FFFFFF1A;
+}
+.Bars span {
+  display: block;
+  height: 100%;
+}
+
+.Bar {
+  background-color: #2AB8DB;
+  width: 0%; /* starting empty */
+  transition: width 2s ease-in-out;
+}
+
+
+/* Scrolled navbar effect*/
+.scrolled{
+  background-color: #fff;
+}
+
+/* when scrolled th nav text should be 0f172a */
+.navLinks-colored a {
+  color: #0f172a;
+}
+
+/* Button effect */
+/* btn_animation hover effect */
+.btn_animation{
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  align-items: center;  
+  gap: 8px;
+  font: bold;
+  font-size: 18px;
+  border: 1px solid #2AB8DB;
+  padding: 15px 40px;
+  border-radius: 50px;
+  background: #2AB8DB;
+  color: #fff;
+  position: relative;
+  transition: all .2s ease-in-out;;
+}
+
+
+.btn_animation::after{
+  clear: both;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+  bottom: 0;
+}
+
+.btn_animation:hover::after{
+  width: 100%;
+  border: 2px solid #2AB8DB;
+  border-radius: 50px;
+  background: transparent;
+  color: #2AB8DB;
+}
+
+.btn_animation:hover{
+  background: transparent;
+  color: #2AB8DB !important;
+  border-color: #2AB8DB;
+}
+
+
+/* service card hover effect(different) */
+.service_card {
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  background-size: 300% 300%;
+  transition: background 0.5s ease-in-out;
+}
+
+.service_card:hover {
+  background: linear-gradient(135deg, #2AB8DB, #28a7c9);
+}
+
+
+
+/* preloader effect */
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Progress bat responsive */
+@media (max-width: 768px) {
+  .Bars {
+    width: 330px; 
+    height: 20px;
+    background: transparent;
+    border: 2px solid #FFFFFF1A;
+  }
+}
+

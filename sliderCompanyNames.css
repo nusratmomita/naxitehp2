@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logos-slide{
+    background-color: red;
+    white-space: nowrap;
+    animation: 5s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 50px;
+}
+
+.logos{
+    overflow: hidden;
+}
