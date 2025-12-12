@@ -45,6 +45,7 @@
 
     </div>
 
+    <!-- header + banner -->
     <div class="bg-[url('./assets/bannerBG.png')] bg-cover bg-no-repeat">
         <!-- header section -->
         <header class="fixed top-0 z-9 w-full">
@@ -94,6 +95,7 @@
                 <button id="hamburger" class="lg:hidden block cursor-pointer">
                     <img src="./assets/whiteHambugerIcon.png" class="cursor-pointer" />
                 </button>
+                
                 
                 <!-- no. and CTA -->
                 <div class="lg:flex gap-[59px] items-center hidden">
@@ -150,7 +152,7 @@
             </ul>
 
             <!-- Button -->
-            <div class="mt-60">
+            <div class="mt-65">
                 <div>
                     <h3 class="font-[600] text-[16px] leading-[35px] text-[#181818]">Call Us: (+55) -66 99 88</h3>
                 </div>
@@ -548,12 +550,12 @@
 
         <!-- description of naxite section -->
         <div class="pt-[100px] lg:pt-[120px]">
-            <div class="bg-[url('./assets/descriptionOfNaxiteBG.png')] bg-cover object-cover bg-no-repeat lg:flex lg:gap-[20px] flex justify-center">
+            <div class="bg-[url('./assets/descriptionOfNaxiteBG.png')] bg-cover object-cover bg-no-repeat lg:gap-[20px] flex flex-col-reverse lg:flex-row justify-center">
                 <div class="lg:w-[50%] relative">
-                    <div class="flex flex-col lg:flex-row mt-[25px] ml-15 relative">
+                    <div class="flex flex-col lg:flex-row lg:mt-[25px] ml-5 relative">
                         <img class="hidden lg:block absolute top-10 left-140 animate-bounce" src="./assets/squareDots.png" alt="squareDots">
                         <img class="hidden lg:block absolute top-140 left-0 animate-bounce rotate-180" src="./assets/pinkSquareDots.png" alt="squareDots">
-                        <img class="absolute left-40 top-40 w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-l-[#2AB8DB] border-t-[#2AB8DB]" src="./assets/description1.jpg" alt="description1">|
+                        <img class="lg:absolute lg:left-40 lg:top-40 w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-l-[#2AB8DB] border-t-[#2AB8DB]" src="./assets/description1.jpg" alt="description1">|
                         <img class="w-[450px] h-[500px] object-cover rounded-[15px] border-4 border-[#2AB8DB]" src="./assets/description2.jpg" alt="description2">|
                     </div>
                 </div>
@@ -1065,7 +1067,7 @@
         </div>
 
         <!-- company name section -->
-        <marquee class="hidden pb-[120px] container bg-[#1F242E08] flex-col lg:flex-row flex justify-center items-center cursor-pointer" marquee="scroll" direction="left" duration="2000" onmouseover="this.stop()" onmouseout="this.start()">
+        <marquee class=pb-[120px] container bg-[#1F242E08] flex-col lg:flex-row flex justify-center items-center cursor-pointer" marquee="scroll" direction="left" duration="2000" onmouseover="this.stop()" onmouseout="this.start()">
             <div class="flex justify-center items-center gap-[100px] mt-[120px] rounded-[20px] px-4 py-4">
                 <img src="./assets/Google_2015_logo.png" alt="google">
                 <img src="./assets/amazon.png" alt="amazon">
@@ -1270,6 +1272,8 @@
                 header.classList.add("scrolled");
                 document.querySelector(".navLinks").classList.add("navLinks-colored");
 
+                document.getElementById("hamburger").style.backgroundColor="#919191";
+                
                 document.querySelector(".call_us").classList.remove("text-[#FFA8A7]");
                 document.querySelector(".call_us").classList.add("text-black");
 
@@ -1289,6 +1293,8 @@
                 header.classList.remove("scrolled");
                 document.querySelector(".navLinks").classList.remove("navLinks-colored");
                 
+                document.getElementById("hamburger").style.backgroundColor="";
+
                 document.querySelector(".call_us").classList.remove("text-black");
                 document.querySelector(".call_us").classList.add("text-[#FFA8A7]");
 
